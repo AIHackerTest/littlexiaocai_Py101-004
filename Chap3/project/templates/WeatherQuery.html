@@ -1,0 +1,12 @@
+{% extends "WeatherIndex.html" %}
+{% block content %}
+   <p style="text-align:center">
+        {% if error %}
+        <font size="5" face="arial">输入的城市名有误</font> <br><br>
+        {% else %}
+        <font size="5" face="arial">{{form.city.data}}</font> <br><br>
+        <font size="4" face="arial">天气:{{weather.text}}</font> <br><br>
+        <font size="4" face="arial">温度:{{weather.temperature}}</font> <br>
+        {% endif %}
+   </p>
+{% endblock %}

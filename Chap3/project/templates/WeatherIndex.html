@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<br>
+<h1 style="text-align:center">天气查询系统</h1>
+
+<body>
+<br>
+<form action="" method="post" name="login">
+    {{ form.hidden_tag() }}
+    <p style="text-align:center">
+        城市：{{ form.city(size=80) }} <input type="submit" name = "submit" value="查询"> <input type="submit" name = "submit"  value="历史"> <input type="submit" name = "submit"  value="帮助">
+    </p>
+</form>
+
+{% block content %}{% endblock %}
+
+</body>
+
+</html>

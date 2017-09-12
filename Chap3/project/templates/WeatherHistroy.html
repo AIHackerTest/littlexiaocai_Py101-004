@@ -1,0 +1,12 @@
+{% extends "WeatherIndex.html" %}
+
+{% block content %}
+   <p style="text-align:center">
+        <font size="5" face="arial">历史查询结果</font> <br><br>
+        {% for rd  in record %}
+            <font size="3" face="arial">{{rd.city}}</font>
+            <font size="3" face="arial">{{rd.text}}</font>
+            <font size="3" face="arial">{{rd.temperature}}</font> <br><br>
+        {% endfor %}
+    </p>
+{% endblock %}
